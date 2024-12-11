@@ -166,6 +166,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  position: relative;
 }
 
 .section__pic-container {
@@ -186,11 +187,12 @@ section {
 
 .section__text__p1 {
   text-align: centre;
+  margin-bottom: 0.5rem;
 }
 
 .section__text__p2 {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .title {
@@ -289,6 +291,20 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  transition: background-color 0.3s, color 0.3s;
+  transform: translateX(-50%);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 .details-container {

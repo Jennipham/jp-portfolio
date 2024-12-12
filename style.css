@@ -58,7 +58,8 @@ a:hover {
 }
 
 .logo {
-  height: 5rem;
+    height: 10vh;
+    width: auto;
 }
 
 .logo:hover {
@@ -74,6 +75,7 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  z-index: 1000;
 }
 
 .hamburger-icon {

@@ -4,3 +4,9 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+function flipCard(button) {
+    const card = button.closest('.flip-card');
+    card.classList.toggle('flipped');
+  }
+  

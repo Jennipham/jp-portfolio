@@ -321,6 +321,9 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  overflow:scroll;
+  width: fit-content;
+  height: auto;
 }
 
 .section-container {
@@ -465,29 +468,23 @@ footer p {
     flex-wrap: wrap;
 
   }
-  
-  /* Flip Card Front and Back */
-  .flip-card-front, .flip-card-back {
+
+  .flip-card-front{
+    backface-visibility: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
   
-  .flip-card-front {
-    background: rgb(250, 250, 250);
-  }
-  
+
   .flip-card-back {
     transform: rotateY(180deg);
     overflow:scroll;
-  }
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  } 
   
   /* When Flipped */
   .flip-card.flipped .flip-card-inner {
